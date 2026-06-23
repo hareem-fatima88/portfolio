@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hareem Fatima — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <span class="nav-mark">HF<span class="dot">.</span></span>
+    <nav class="nav-links" id="navLinks">
+      <a href="#bio">Bio</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== BIO / HERO ===== -->
+  <section class="hero" id="bio">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">// portfolio — last compiled <span id="buildDate"></span></p>
+        <h1>Hareem Fatima</h1>
+        <p class="role">Frontend Developer &amp; Computer Science Student</p>
+        <p class="intro">
+          I'm a Computer Science student who enjoys turning rough ideas into clean,
+          usable interfaces. I care about readable code, considered typography, and building
+          things that work well on a slow connection and a small screen. Currently looking for
+          internship and junior developer opportunities.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-hidden="true">
+        <div class="card-row"><span>name</span><span>Hareem Fatima</span></div>
+        <div class="card-row"><span>role</span><span>Frontend Developer</span></div>
+        <div class="card-row"><span>based_in</span><span>Lahore, PK</span></div>
+        <div class="card-row"><span>status</span><span class="status-open">open to work</span></div>
+        <div class="card-row"><span>stack</span><span>HTML · CSS · JS</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <h2 class="section-title"><span class="tag">01</span> Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>BS Computer Science</h3>
+            <span class="timeline-date">2022 — 2026</span>
+          </div>
+          <p class="timeline-org">University of Management and Technology, Lahore</p>
+          <p class="timeline-note">CGPA: 3.4 / 4.0 — Relevant coursework: Web Engineering, Data
+            Structures, Database Systems, Human-Computer Interaction.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Intermediate (Pre-Engineering)</h3>
+            <span class="timeline-date">2020 — 2022</span>
+          </div>
+          <p class="timeline-org">Punjab Group of Colleges, Lahore</p>
+          <p class="timeline-note">Grade: A — Physics, Chemistry, Mathematics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <h2 class="section-title"><span class="tag">02</span> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="pill-list">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Python</li><li>Java</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools &amp; Platforms</h3>
+        <ul class="pill-list">
+          <li>Git &amp; GitHub</li><li>VS Code</li><li>Figma</li><li>Netlify</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Concepts</h3>
+        <ul class="pill-list">
+          <li>Responsive Design</li><li>Accessibility</li><li>REST APIs</li><li>OOP</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Professional</h3>
+        <ul class="pill-list">
+          <li>Communication</li><li>Teamwork</li><li>Problem Solving</li><li>Time Management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE & PROJECTS ===== -->
+  <section class="section" id="work">
+    <h2 class="section-title"><span class="tag">03</span> Experience &amp; Projects</h2>
+
+    <h3 class="subhead">Experience</h3>
+    <div class="exp-item">
+      <div class="exp-head">
+        <h4>Web Development Intern</h4>
+        <span class="timeline-date">Jun 2025 — Aug 2025</span>
+      </div>
+      <p class="timeline-org">TechNova Solutions, Lahore</p>
+      <ul class="bullet-list">
+        <li>Built and maintained responsive landing pages using HTML, CSS, and vanilla JavaScript.</li>
+        <li>Collaborated with a 4-person team using Git to ship weekly client updates.</li>
+        <li>Improved page load speed by 30% by optimizing images and minifying assets.</li>
+      </ul>
+    </div>
+
+    <h3 class="subhead">Projects</h3>
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-num">01</div>
+        <h4>Expense Tracker</h4>
+        <p>A browser-based expense tracker with local storage persistence, category filters, and
+          a live spending chart drawn with vanilla JS canvas.</p>
+        <div class="project-tags"><span>JavaScript</span><span>CSS Grid</span><span>LocalStorage</span></div>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </article>
+      <article class="project-card">
+        <div class="project-num">02</div>
+        <h4>Campus Event Finder</h4>
+        <p>A university course project: a searchable directory of campus events with filtering
+          by date and category, built with semantic HTML and a mobile-first layout.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </article>
+      <article class="project-card">
+        <div class="project-num">03</div>
+        <h4>Weather Dashboard</h4>
+        <p>A weather lookup tool that fetches live data from a public API and displays a 5-day
+          forecast with simple animated icons.</p>
+        <div class="project-tags"><span>JavaScript</span><span>REST API</span><span>Fetch</span></div>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-contact" id="contact">
+    <h2 class="section-title"><span class="tag">04</span> Get in Touch</h2>
+    <p class="contact-line">Open to internships, junior roles, and interesting freelance work.</p>
+    <div class="contact-row">
+      <a href="mailto:F2023266767@umt.edu.pk" class="btn btn-primary">F2023266767@umt.edu.pk</a>
+      <a href="https://github.com/hareem-fatima88" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/hareem-fatima-939324406" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Hareem Fatima. Built with HTML, CSS &amp; JavaScript — no frameworks.</p>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
